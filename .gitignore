@@ -1,5 +1,17 @@
 HELP.md
 target/
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/application.yaml
+src/main/resources/application.json
+src/main/resources/application.xml
+src/main/resources/application.toml
+src/main/resources/application.properties.template
+src/main/resources/application.yml.template
+src/main/resources/application.yaml.template
+src/main/resources/application.json.template
+src/main/resources/application.xml.template
+src/main/resources/application.toml.template
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/

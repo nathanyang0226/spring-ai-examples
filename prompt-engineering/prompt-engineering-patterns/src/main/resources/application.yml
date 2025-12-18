@@ -3,7 +3,7 @@ spring:
     name: spring-ai-demo
   ai:
     openai:
-      api-key: sk-39c3a1ae1cssssssss
+      api-key: sk-0014b2d07f0b4ec1976b4886862186f7
       base-url: https://api.deepseek.com
       chat:
         options:

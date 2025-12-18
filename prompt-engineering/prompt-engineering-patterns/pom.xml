@@ -33,6 +33,18 @@
 			<groupId>org.springframework.ai</groupId>
 			<artifactId>spring-ai-starter-model-openai</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>jakarta.validation</groupId>-->
+<!--			<artifactId>jakarta.validation-api</artifactId>-->
+<!--			<version>3.0.2</version>-->
+<!--		</dependency>-->
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -52,6 +64,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>16</source>
+					<target>16</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

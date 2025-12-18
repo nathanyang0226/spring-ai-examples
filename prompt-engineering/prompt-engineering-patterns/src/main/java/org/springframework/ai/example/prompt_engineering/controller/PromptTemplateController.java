@@ -31,7 +31,7 @@ public class PromptTemplateController {
     // 1. device-diagnosis-pro.st (标准版-稳健增强版)
     // 2. device-diagnosis-secure.st (安全版-防御性编程版 (防注入攻击))
     // 3. device-diagnosis-fewshot.st (示例版-Few-Shot 少样本版 (修正 AI 逻辑))
-    @Value("classpath:/prompts/device-diagnosis-general-version.st")
+    @Value("classpath:/prompts/device-diagnosis-pro.st")
     private  Resource diagnosisResource;
 
 
