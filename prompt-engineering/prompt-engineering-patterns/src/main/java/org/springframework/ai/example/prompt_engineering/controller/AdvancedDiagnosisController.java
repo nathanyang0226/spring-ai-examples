@@ -112,6 +112,11 @@ public class AdvancedDiagnosisController {
     }
 
 
+    /**
+     * 在真实的业务代码中，你通常不会让前端把所有这些字段都传过来（那样不安全，前端也拿不到这么多底层数据）。
+     * <p>
+     * 通常是前端只传一个 ID，后端去数据库查出来填进去。
+     */
     @PostMapping("/diagnose-by-bean")
     public String diagnoseByBean(@RequestBody @Validated DiagnosisRequest request) {
 
@@ -120,7 +125,10 @@ public class AdvancedDiagnosisController {
         DeviceContext context = new DeviceContext(
                 request.deviceId(),
                 "SmartCam_Pro_V2", // 数据库查出来的型号`
-                request.location(), // 前端传的位置信息
+                "v2.0",
+                request.location(),
+                "WIFI",
+                80,// 前端传的位置信息
                 "TIMEOUT_ERR"      // 最近的错误记录
         );
 
